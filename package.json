@@ -3,19 +3,22 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "deploy": "ng build --prod --base-href https://Pshenya.github.io/News-App/ && angular-cli-ghpages --branch gh-pages",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.0.4",
     "@angular/cdk": "^10.1.0",
+    "@angular/cli": "^10.0.4",
     "@angular/common": "~10.0.4",
     "@angular/compiler": "~10.0.4",
+    "@angular/compiler-cli": "^10.0.5",
     "@angular/core": "~10.0.4",
     "@angular/forms": "~10.0.4",
     "@angular/material": "^10.1.0",
@@ -23,18 +26,22 @@
     "@angular/platform-browser-dynamic": "~10.0.4",
     "@angular/router": "~10.0.4",
     "chart.js": "^2.5.0",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
+    "typescript": "~3.9.5",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1000.3",
-    "@angular/cli": "~10.0.3",
-    "@angular/compiler-cli": "~10.0.4",
-    "@types/node": "^12.11.1",
+    "@angular/cli": "^10.0.4",
+    "@angular/compiler-cli": "^10.0.5",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "enhanced-resolve": "^3.3.0",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~5.0.0",
@@ -46,5 +53,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.9.5"
+  },
+  "engines": {
+    "node": "12.14.0",
+    "npm": "6.14.4"
   }
 }
