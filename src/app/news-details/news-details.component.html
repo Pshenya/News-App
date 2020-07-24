@@ -1,0 +1,29 @@
+<!--<div>-->
+<!--<p>{{newsData$.description}}</p>-->
+<!--</div>-->
+<div class="post-content post-cover">
+  <div class="post-content-container">
+    <mat-icon class="back-btn" (click)="goBack()">
+      navigate_before
+    </mat-icon>
+    <div class="cover" [ngStyle]="{'background-image': 'url('+ newsData$.urlToImage +')'}"></div>
+    <div class="post-main-content">
+      <article id={postData._id} [ngStyle]="{'display': 'block'}">
+      <header class="post-headline">
+        <div class="post-headline-content headline-cover">
+          <h1 class="post-headline-title">{{newsData$.title}}</h1>
+          <span class="post-headline-intro">{{newsData$.description}}</span>
+        </div>
+        <div class="post-headline-info">
+          <span class="post-headline-info_date">{{newsData$.publishedAt | date:'dd MMMM yyyy'}}</span>
+        </div>
+      </header>
+      <div class="article-body">
+        <div class="article-text">
+          {{newsData$.content}}
+        </div>
+      </div>
+      </article>
+    </div>
+  </div>
+</div>

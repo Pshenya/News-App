@@ -1,0 +1,29 @@
+mat-toolbar {
+  background-color: #48478a;
+  color: white;
+
+  mat-nav-list.list-horizontal {
+    padding: 0 0 0 30px;
+
+    .mat-list-item {
+      display: inline-block;
+      height: auto;
+      width: auto;
+      color: white;
+
+    }
+
+    .toolbar-title {
+      padding-right: 15px;
+    }
+  }
+
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: unset !important;
+  }
+
+  .mat-list-item {
+    padding: 15px !important;
+  }
+
+}

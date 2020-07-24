@@ -1,0 +1,90 @@
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+.search-block{
+  margin-top: 30px;
+
+  .search-input{
+    font-size: 20px;
+    background: transparent;
+    border: 3px solid #48478a;
+    border-radius: 20px;
+    padding: 10px;
+    width: 800px;
+    transition: all .3s ease;
+
+    &:focus{
+      outline: none;
+      border-color: #42a09c;
+    }
+  }
+}
+.news-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .news-card {
+    background-color: white;
+    width: 25%;
+    margin: 30px 0;
+    transition: 0.3s all ease;
+
+    &:hover{
+      cursor: pointer;
+      background-color: rgba(86, 86, 164, 0.9);
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+
+  .news-card-header-img {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+}
+
+.pagination{
+
+  .pagination-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 25px 0;
+
+    .active a, .active a:hover, .active a:focus{
+      z-index: 3;
+      color: #fff;
+      cursor: default;
+      background-color: #48478a;
+      border-color: #48478a;
+    }
+
+    li{
+      padding: 0 5px;
+
+    }
+
+    a{
+      cursor: pointer;
+      position: relative;
+      padding: 6px 12px;
+      color: #48478a;
+      text-decoration: none;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      transition: all .3s ease;
+
+      &:hover{
+        background-color: rgba(86, 86, 164, 0.9);
+        color: white;
+      }
+    }
+  }
+}
+
+
+
