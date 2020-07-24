@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "deploy": "ng build --prod --base-href https://Pshenya.github.io/News-App/ && angular-cli-ghpages --branch gh-pages",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
